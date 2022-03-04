@@ -1,0 +1,5 @@
+---
+- name: httpd
+  apt: name=apache2  update_cache=yes state=latest
+  become: yes
+  become_method: "sudo"
